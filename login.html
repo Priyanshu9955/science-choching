@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Science Coaching</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Google Identity Services -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+    <!-- Main JS -->
+    <script src="main.js" defer></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .login-card {
+            background: white;
+            max-width: 400px;
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            padding: 40px 30px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .login-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .logo-area {
+            margin-bottom: 25px;
+        }
+
+        .logo-area h2 {
+            color: #333;
+            font-weight: 700;
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        .logo-area p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            margin: 30px 0;
+            color: #a0a5aa;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid #e1e5eb;
+        }
+
+        .divider span {
+            padding: 0 10px;
+            font-size: 13px;
+        }
+
+        .google-btn-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 25px;
+            color: #4a90e2;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .back-link:hover {
+            color: #2c3e50;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-card">
+        <div class="logo-area">
+            <h2>Welcome Back</h2>
+            <p>Sign in to access your courses, notes, and previous year question papers securely.</p>
+        </div>
+
+        <!-- Google Sign-In -->
+        <div id="g_id_onload" data-client_id="807138341494-jpoa0a9fu462ulii2fgc5l9ht5k3iim2.apps.googleusercontent.com"
+            data-context="signin" data-ux_mode="popup" data-callback="handleCredentialResponse"
+            data-auto_prompt="false">
+        </div>
+
+        <div class="google-btn-container">
+            <div class="g_id_signin" data-type="standard" data-shape="rectangular" data-theme="outline"
+                data-text="signin_with" data-size="large" data-logo_alignment="left">
+            </div>
+        </div>
+
+        <div class="divider">
+            <span>Secure Access</span>
+        </div>
+
+        <p style="font-size: 12px; color: #888; text-align: left;">
+            * Security Note: Authentication happens via Google. No passwords are saved or handled by our servers since
+            this is a static website.
+        </p>
+
+        <a href="index.html" class="back-link">← Back to Home</a>
+    </div>
+
+</body>
+
+</html>

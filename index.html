@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!----CSS-->
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/about.css" />
+
+
+
+
+  <style>
+    body {
+      background-image: url("./images/bg-texture.png");
+    }
+  </style>
+
+  <title>School tution Website</title>
+
+  <!----icons-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <script src="https://kit.fontawesome.com/a5afd6b58b.js" crossorigin="anonymous"></script>
+
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+  <!----Swiper JS---->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+
+  <!----google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!=================== NavBar===============!>
+    <nav>
+      <div class="container nav_container">
+        <a href="index.html">
+          <h4>SCIENCE COCHING</h4>
+        </a>
+        <ul class="nav_menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="notes.html">Notes || PYQs</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li class="auth-nav-item"><a href="login.html" class="btn btn-primary"
+              style="padding: 5px 15px; background: transparent;">LogIn/Sign Up</a></li>
+
+        </ul>
+        <button id="open-menu-button"><i class="ri-menu-line"></i></button>
+        <button id="close-menu-button">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+    </nav>
+    <!================== End of NavBAr============!>
+
+
+
+
+      <!================== HEADER============!>
+        <header>
+          <div class="container header_container">
+            <div class="header_left">
+              <h1>
+                Grow your Skill <span>Learn With Science Coching Center</span>
+              </h1>
+              <p>The Ultimate Guide कक्षा 𝟏 से कक्षा 𝟏𝟐𝐭𝐡 तक</p>
+              <a href="courses.html" class="btn btn-primary">Get Started</a>
+            </div>
+
+            <div class="header_right">
+              <div class="header_right-image">
+                <img src="./images/header.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </header>
+        <!================== End of HEADER============!>
+
+          <!================== CATEGORIES============!>
+            <section class="categories">
+              <div class="container categories_container">
+                <div class="categories-left">
+                  <h1>Categories</h1>
+                  <p>
+                    Explore our wide range of courses designed for students from Class 1 to 12. We provide expert
+                    guidance, comprehensive study materials, regular assessments, and personalized support to help every
+                    student build a strong academic foundation and achieve excellent results.
+                  </p>
+                  <a href="#" class="btn">Learn More</a>
+                </div>
+                <div class="categories_right">
+                  <article class="category">
+                    <span class="category_icon"><img class="baby-image" src="./images/1-5.png" alt="" /></span>
+                    <h5>Class (कक्षा) 1 to 5</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Be</p>
+                  </article>
+
+                  <article class="category">
+                    <span class="category_icon"><img class="adult-image" src="./images/5-10.png" alt="" /></span>
+                    <h5>Class (कक्षा) 6 to 8</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Be</p>
+                  </article>
+
+                  <article class="category">
+                    <span class="category_icon"><img class="adult-image" src="./images/5-10.png" alt="" /></span>
+                    <h5>Class (कक्षा) 9 to 10</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Be</p>
+                  </article>
+
+                  <article class="category">
+                    <span class="category_icon"><img class="young-image" src="./images/10-12.png" alt="" /></span>
+                    <h5>Class (कक्षा) 11 to 12th Arts</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Be</p>
+                  </article>
+
+                  <article class="category">
+                    <span class="category_icon"><img class="young-image" src="./images/10-12.png" alt="" /></span>
+                    <h5>Class (कक्षा) 11 to 12th Commerce</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Be</p>
+                  </article>
+
+                  <article class="category">
+                    <span class="category_icon"><img class="young-image" src="./images/10-12.png" alt="" /></span>
+                    <h5>Class (कक्षा) 11 to 12th Science</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Be</p>
+                  </article>
+                </div>
+              </div>
+            </section>
+            <!================== End of HEADER============!>
+
+              <!================== POPULAR COURCES============!>
+
+                <section class="course">
+                  <h2>Our Popular Courses</h2>
+                  <div class="container courses_container">
+                    <article class="courses">
+                      <div class="course_image">
+                        <img src="./images/course1.png" alt="course1" />
+                      </div>
+                      <div class="course_info">
+                        <h4>We Teach Class 10th Student</h4>
+                        <p>
+                          We teach Class 10th All subject at one place in Affordable fees
+                          with our Highly Quilfied Teacher
+                        </p>
+                        <a href="./course-details.html" class="btn btn-primary">Know More</a>
+                      </div>
+                    </article>
+
+                    <article class="courses">
+                      <div class="course_image">
+                        <img class="courses2" src="./images/course2.png" alt="course2" />
+                      </div>
+                      <div class="course_info">
+                        <h4>We Teach Class 11th Student</h4>
+                        <p>
+                          We teach Class 11th All subject at one place in Affordable fees
+                          with our Highly Quilfied Teacher
+                        </p>
+                        <a href="./course-details.html" class="btn btn-primary">Know More</a>
+                      </div>
+                    </article>
+
+                    <article class="courses">
+                      <div class="course_image">
+                        <img src="./images/course3.png" alt="course3" />
+                      </div>
+                      <div class="course_info">
+                        <h4>We Teach Class 12th Student</h4>
+                        <p>
+                          We teach Class 11th All subject at one place in Affordable fees
+                          with our Highly Quilfied Teacher
+                        </p>
+                        <a href="./course-details.html" class="btn btn-primary">Know More</a>
+                      </div>
+                    </article>
+                  </div>
+                </section>
+
+                <!================== END OF POPULAR COURCES============!>
+
+
+                  <!================== FREQUENTLY ASKED QUESTION============!>
+
+                    <section class="faqs">
+                      <h2>Frequently Asked Question</h2>
+                      <div class="container faqs_container">
+                        <article class="faq">
+                          <div class="faq_icon"><i class="ri-add-fill"></i></div>
+                          <div class="question_answer">
+                            <h4>How do I choose the right course?</h4>
+                            <p>We offer courses based on your class and academic goals. If you're unsure, our counselors
+                              can help you select the most suitable course after understanding your learning needs.</p>
+                          </div>
+                        </article>
+
+                        <article class="faq">
+                          <div class="faq_icon"><i class="ri-add-fill"></i></div>
+                          <div class="question_answer">
+                            <h4>Which classes do you provide coaching for?</h4>
+                            <p>We provide coaching for Classes 9, 10, 11, and 12 with a special focus on Science
+                              subjects, board exam preparation, and competitive exam foundations.</p>
+                          </div>
+                        </article>
+
+                        <article class="faq">
+                          <div class="faq_icon"><i class="ri-add-fill"></i></div>
+                          <div class="question_answer">
+                            <h4>Are study materials included with the course?</h4>
+                            <p>Yes. Every enrolled student receives well-structured study notes, practice worksheets,
+                              previous year question papers (PYQs), and regular assignments.</p>
+                          </div>
+                        </article>
+
+                        <article class="faq">
+                          <div class="faq_icon"><i class="ri-add-fill"></i></div>
+                          <div class="question_answer">
+                            <h4>How can I enroll in a course?</h4>
+                            <p>You can enroll by filling out the registration form on our website or by contacting us
+                              directly through phone or email. Our team will guide you through the admission process.
+                            </p>
+                          </div>
+                        </article>
+
+
+                        <article class="faq">
+                          <div class="faq_icon"><i class="ri-add-fill"></i></div>
+                          <div class="question_answer">
+                            <h4>Do you conduct regular tests?</h4>
+                            <p>Yes. Weekly tests, monthly assessments, and mock examinations are conducted regularly to
+                              track student progress and improve exam performance.</p>
+                          </div>
+                        </article>
+
+
+                        <article class="faq">
+                          <div class="faq_icon"><i class="ri-add-fill"></i></div>
+                          <div class="question_answer">
+                            <h4>How can I contact the coaching institute?</h4>
+                            <p>You can reach us through our Contact Us page, call us on our official number, or email
+                              us. We'll respond to your queries as soon as possible.</p>
+                          </div>
+                        </article>
+                      </div>
+                    </section>
+
+                    <!================== END OF FREQUENTLY ASKED QUESTION============!>
+
+
+
+
+                      <!================== STUDENT TESTIMONIALS============!>
+                        <section class="container testimonials_container swiper mySwiper">
+                          <h2>Students' Testimonials</h2>
+                          <div class="swiper-wrapper">
+                            <article class="testimonial swiper-slide">
+                              <div class="avatar">
+                                <img src="./images/avatar2.jpg" alt="avatar1">
+                              </div>
+                              <div class="testimonial_info">
+                                <h5>Priyanshu</h5>
+                                <small>Student Class 12th</small>
+                              </div>
+                              <div class="testimonial_body">
+                                <p>
+                                  The notes provided here are extremely well-organized and have saved me so much time
+                                  during my exam preparation. Everything I need is in one place!
+                                </p>
+                              </div>
+                            </article>
+
+                            <article class="testimonial swiper-slide">
+                              <div class="avatar">
+                                <img src="./images/avatar3.jpg" alt="avatar2">
+                              </div>
+                              <div class="testimonial_info">
+                                <h5>Prince</h5>
+                                <small>MCA Final Year</small>
+                              </div>
+                              <div class="testimonial_body">
+                                <p>
+                                  I love how easy it is to access Previous Year Question Papers. It gave me a clear idea
+                                  of the exam pattern and really boosted my confidence before finals.
+                                </p>
+                              </div>
+                            </article>
+
+                            <article class="testimonial swiper-slide">
+                              <div class="avatar">
+                                <img src="./images/avatar4.jpg" alt="avatar3">
+                              </div>
+                              <div class="testimonial_info">
+                                <h5>Aditya</h5>
+                                <small>BCA Student</small>
+                              </div>
+                              <div class="testimonial_body">
+                                <p>
+                                  The course materials are so useful and the interface is incredibly helpful. Navigating
+                                  through different subjects and finding relevant study guides is seamless.
+                                </p>
+                              </div>
+                            </article>
+
+                            <article class="testimonial swiper-slide">
+                              <div class="avatar">
+                                <img src="./images/avatar5.jpg" alt="avatar4">
+                              </div>
+                              <div class="testimonial_info">
+                                <h5>Anshula</h5>
+                                <small>CSE Student</small>
+                              </div>
+                              <div class="testimonial_body">
+                                <p>
+                                  This website completely changed how I study. The layout is clean and I don't waste
+                                  time searching for materials anymore. Highly recommended!
+                                </p>
+                              </div>
+                            </article>
+
+                            <article class="testimonial swiper-slide">
+                              <div class="avatar">
+                                <img src="./images/avatar2.jpg" alt="avatar5">
+                              </div>
+                              <div class="testimonial_info">
+                                <h5>Anisha</h5>
+                                <small>Class 11th Student</small>
+                              </div>
+                              <div class="testimonial_body">
+                                <p>
+                                  The study guides and mock tests are just fantastic! They are perfectly aligned with
+                                  our syllabus and the overall learning experience is very professional.
+                                </p>
+                              </div>
+                            </article>
+
+                          </div>
+                          <div class="swiper-1">
+                            <div class="swiper-pagination "></div>
+                          </div>
+                        </section>
+
+                        <!================== END OF STUDENT TESTIMONIALS============!>
+
+
+
+                          <!================== Footer============!>
+                            <footer class="footer">
+                              <div class="container footer_container">
+                                <div class="footer-1">
+                                  <a href="index.html" class="footer_logo">
+                                    <h4>Science Choching</h4>
+                                  </a>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, asperiores?</p>
+                                </div>
+
+                                <div class="footer_2">
+                                  <h4>Permalinks</h4>
+                                  <ul class="permalinks">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                  </ul>
+                                </div>
+
+
+                                <div class="footer_3">
+                                  <h4>Primacy</h4>
+                                  <ul class="privacy">
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Term And Condition</a></li>
+                                    <li><a href="#">Refund Policy</a></li>
+                                  </ul>
+                                </div>
+
+                                <div class="footer_4">
+                                  <h4>Developer</h4>
+                                  <div>
+                                    <p>+91 995500000</p>
+                                    <p>priyanshurani06@gmail.com</p>
+                                  </div>
+
+                                  <ul class="footer_socials">
+                                    <li>
+                                      <a href="#"><i class="ri-facebook-line"></i></a>
+                                    </li>
+                                    <li>
+                                      <a href="#"><i class="ri-instagram-line"></i></a>
+                                    </li>
+                                    <li>
+                                      <a href="#"><i class="ri-invision-fill"></i></a>
+                                    </li>
+                                    <li>
+                                      <a href="#"><i class="ri-github-fill"></i></a>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div class="footer_copyright">
+                                  <small>Copyright &copy; You tube tutorial </small>
+                                </div>
+
+                              </div>
+                            </footer>
+                            <!================== END OF Footer============!>
+
+
+
+
+                              <!----Js----->
+                              <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+                              <script src="./main.js"></script>
+
+
+                              <!----Js SLIDER----->
+                              <script>
+                                var swiper = new Swiper(".mySwiper", {
+                                  slidesPerView: 1,
+                                  spaceBetween: 30,
+                                  pagination: {
+                                    el: ".swiper-pagination",
+                                    clickable: true,
+                                  },
+                                  // when windows width is >= 600px
+                                  breakpoints: {
+                                    600: {
+                                      slidesPerView: 2
+                                    }
+                                  }
+                                });
+
+
+                              </script>
+                              <!----Js SLIDER End----->
+
+
+
+
+
+
+
+
+</body>
+
+</html>

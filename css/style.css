@@ -1,0 +1,1066 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+:root {
+  --color-primary: #6c63ff;
+  --color-sucess: #00bf8e;
+  --color-warning: #f7c94b;
+  --color-danger: #f75842;
+  --color-primary-variant: rgba(247, 88, 66, 0.4);
+  --color-white: white;
+  --color-light: rgba(255, 255, 255, 0.7);
+  --color-black: black;
+  --color-bg: #1f2641;
+  --color-bg1: #2e3267;
+  --color-bg2: #424890;
+
+  --container-width-lg: 76%;
+  --container-width-md: 90%;
+  --container-width-sm: 94%;
+
+  --transition: all 400ms ease;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7;
+  color: var(--color-white);
+  background: var(--color-bg);
+}
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+section {
+  padding: 6rem 0;
+}
+section h2 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
+}
+h1 {
+  font-size: 2.4rem;
+}
+h2 {
+  font-size: 2rm;
+}
+h3 {
+  font-size: 1.6rem;
+}
+h4 {
+  font-size: 1.3rem;
+}
+a {
+  color: var(--color-white);
+  font-weight: bold;
+}
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+.btn {
+  display: inline-block;
+  background: var(--color-white);
+
+  color: var(--color-black);
+  padding: 1rem 2rem;
+  border: 1px solid transparent;
+  font-weight: 500;
+  transition: var(--transition);
+}
+.btn:hover {
+  background: transparent;
+  color: var(--color-white);
+  border-color: var(--color-white);
+}
+.btn-primary {
+  background: var(--color-danger);
+  color: var(--color-white);
+}
+
+/* ========================= NAVBAR ================ */
+nav {
+  background: transparent;
+  /* hwb(228 97% 1% / 0.969) */
+  width: 100vw;
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  z-index: 11;
+}
+
+/* change nav bar style  */
+.window-scroll {
+  background: var(--color-primary);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.nav_container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav button {
+  display: none;
+}
+.nav_menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.nav_menu a {
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+.nav_menu a:hover {
+  /* color: var(--color-black); */
+  color: var(--color-bg2);
+  /* font-weight: bold; */
+}
+.container .logo-science-coching {
+  width: 80px;
+}
+
+.login{
+  width: 9rem;
+  height: 2rem;
+  background: var(--color-danger);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3rem;
+}
+
+/* ========================= Header ================ */
+
+header {
+  position: relative;
+  top: 5rem;
+  overflow: hidden;
+  height: 70vh;
+  margin-bottom: 5rem;
+}
+.header_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 5rem;
+  height: 100%;
+}
+.header_left {
+  margin: 1rem 0 2.4rem;
+}
+.header_left a {
+  margin-top: 30px;
+}
+.header_left p {
+  font-size: x-large;
+  margin-top: 20px;
+}
+
+/* ========================= CATEGORIES ================ */
+.categories {
+  background: var(--color-bg1);
+  height: 32rem;
+}
+.categories h1 {
+  line-height: 1;
+  margin-bottom: 3rem;
+}
+.categories_container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.categories-left {
+  margin-right: 4rem;
+}
+.categories-left p {
+  margin: 1rem 0 3rem;
+}
+.categories_right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+.category {
+  background: var(--color-bg2);
+  padding: 2rem;
+  transition: var(--transition);
+  border-radius: 2rem;
+}
+.category:hover {
+  box-shadow: 0 3rem 3rem rgb(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.category .baby-image {
+  width: 50px;
+  margin-bottom: 10px;
+}
+.category .adult-image {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.category .young-image {
+  width: 90px;
+  margin-bottom: 10px;
+}
+.category h5 {
+  font-size: 1rem;
+}
+.category p {
+  font-size: 0.85rem;
+}
+
+/* ========================= POPULAR COURSES ================ */
+.course {
+  margin-top: 10rem;
+}
+.courses_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.courses {
+  background: var(--color-bg1);
+  text-align: center;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: var(--transition);
+}
+.courses:hover {
+  background: var(--color-bg1);
+  border-color: var(--color-primary);
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.3);
+}
+.course_image {
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+}
+.course_image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.course_info {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.course_info h4 {
+  min-height: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.course_info p {
+  margin: 1.2rem 0 2rem;
+  font-size: 0.9rem;
+  flex-grow: 1;
+}
+.course_info .btn {
+  margin-top: auto;
+  align-self: center;
+}
+
+/* ========================= FAQ ================ */
+.faqs {
+  box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+  background: var(--color-bg1);
+}
+.faqs_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.faq {
+  padding: 2rem;
+  display: flex;
+  gap: 1.4rem;
+  height: fit-content;
+  background: var(--color-primary);
+}
+
+.faq:hover {
+  cursor: pointer;
+}
+.faq h4:hover {
+  color: var(--color-bg2);
+}
+.faq h4 {
+  font-size: 1rem;
+  line-height: 2.2;
+}
+.faq_icon {
+  align-items: flex-start;
+  font-size: 1.2rem;
+}
+
+.faq p {
+  margin-top: 0.8rem;
+  display: none;
+}
+.faq.open p {
+  display: block;
+}
+
+/* ========================= TESTMONIALS ================ */
+.testimonials_container {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 5rem;
+}
+.testimonial {
+  padding-top: 2rem;
+}
+.testimonials_container h2 {
+  padding-top: 4rem;
+}
+.avatar {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1rem;
+  margin: 0 auto 1rem;
+  border: 1rem solid var(--color-bg1);
+}
+
+.testimonial_info {
+  text-align: center;
+}
+.testimonial_body {
+  background: var(--color-primary);
+  padding: 2rem;
+  margin-top: 3rem;
+  position: relative;
+}
+.testimonial_body::before {
+  content: "";
+  display: block;
+  background: linear-gradient(
+    135deg,
+    transparent,
+    var(--color-primary),
+    var(--color-primary),
+    var(--color-primary)
+  );
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 50%;
+  top: -1.5rem;
+  transform: rotate(45deg);
+}
+.swiper-1 {
+  padding-top: 80px;
+}
+
+/* ========================= Footer ================ */
+footer {
+  background: var(--color-bg1);
+  padding-top: 5rem;
+  font-size: 0.9rem;
+}
+.footer_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+}
+.footer_container > div h4 {
+  margin-bottom: 1.2rem;
+}
+
+.footer-1 p {
+  margin: 0 0 2rem;
+}
+footer ul li {
+  margin-bottom: 0.7rem;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer_socials {
+  display: flex;
+  gap: 1rem;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+.footer_copyright {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 1.2rem 0;
+  border-top: 1px solid var(--color-bg2);
+}
+
+/* =========================Media Queries (Tables) =======================*/
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  /*     ==================NavBAR================ */
+
+  nav button{
+    display: inline-block;
+    background: transparent ;
+    font-size: 1.8rem;
+    color: var(--color-white);
+    cursor: pointer;
+
+  }
+  nav button#close-menu-button{
+    display: none;
+
+  }
+  .login i{
+    width: 1rem;
+    height: 2rem;
+    position: relative;
+    position: absolute;
+  }
+.nav_menu {
+  position: fixed;
+  top: 5rem;
+  right: 5%;
+  height: fit-content;
+  width: 18rem;
+  flex-direction: column;
+  gap: 0;
+  display: none;
+
+}
+.nav_menu li{
+  width: 100%;
+  height: 5.8rem;
+  animation: animateNavItems 400ms linear forwards;
+  transform-origin: top right;
+}
+
+.nav_menu li:nth-child(2){
+  animation-delay: 200ms;
+}
+
+.nav_menu li:nth-child(3){
+  animation-delay: 400ms;
+}
+
+.nav_menu li:nth-child(4){
+  animation-delay: 600ms;
+}
+
+.nav_menu li:nth-child(5){
+  animation-delay: 800ms;
+}
+
+.nav_menu li:nth-child(6){
+  animation-delay: 1000ms;
+}
+
+@keyframes animateNavItems{
+0% {
+transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
+}
+100%{
+  transform: rotateZ(0) rotateX(0) scale(1);
+  opacity: 1;
+  
+}
+} 
+
+
+
+.nav_menu li a{
+  background: var(--color-primary);
+  box-shadow: -4rem 6rem 10rem black ;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+
+}
+
+.nav_menu li a:hover{
+  background: var(--color-bg2);
+  color: var(--color-white);
+}
+
+
+/*     ==================NavBAR================ */
+
+header{
+  height: 52vh;
+  margin-bottom: 4rem;
+}
+.header_container{
+  gap: 0;
+  padding-bottom: 3rem;
+}
+
+/*     ==================Categories ================ */
+.categories{
+  height: auto ;
+}
+.categories_container{
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  
+}
+
+.categories-left{
+  margin-right: 0;
+}
+
+/*     ================== Popular Courses ================ */
+
+.courses{
+  margin: 0;
+}
+.courses_container{
+  grid-template-columns: 1fr 1fr;
+}
+
+/*     ================== Frq ================ */
+
+.faqs_container{
+  grid-template-columns: 1fr;
+}
+
+.faq{
+  padding: 1.5rem;
+}
+
+/*     ================== Footer ================ */
+.footer_container{
+  grid-template-columns: 1fr 1fr;
+}
+
+}
+
+/* ===================== MOBILE MEDIA QUIERY ====================== */
+
+@media screen and (max-width: 600px) {
+  .container{
+    width: var(--container-width-sm);
+  }
+
+
+  /*     ==================NavBAR================ */
+.nav_menu{
+  right: 3%;
+
+}
+
+/*     ================== Header ================ */
+header{
+  height: 100vh;
+}
+
+.header_container{
+  grid-template-columns: 1fr;
+  text-align:center ;
+  margin-top: 0;
+}
+
+.header_left p{
+  margin-bottom: 1.3rem;
+
+}
+
+/*     ================== Categories ================ */
+
+.categories_right{
+  grid-template-columns: 1fr 1fr ;
+  gap: 0.7rem;
+
+}
+
+.category{
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.category_icon{
+margin-top: 4px;
+display: inline-block;
+}
+
+/*     ================== Popular Courses ================ */
+  
+.courses_container{
+  grid-template-columns: 1fr;
+}
+
+
+/*     ================== testmonial ================ */
+
+
+.testimonial_body{
+  padding: 1.2rem;
+}
+
+/*     ================== footer ================ */
+
+.footer_container{
+  grid-template-columns: 1fr;
+  text-align: center;
+  gap: 2rem;
+
+}
+.footer-1 p{
+  margin: 1rem auto ;
+
+}
+.footer_socials{
+  justify-content: center;
+}
+
+}
+
+
+
+
+
+
+/* ================== Signup popup modal ============
+
+body,input{
+  font-family: 'Roboto', sans-serif;
+}
+
+.container_main_form{
+  position: relative;
+  width: 40rem;
+  height: 40rem;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 3rem;
+  opacity: 0;
+  margin-top: 8rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 1;
+  box-shadow: 0px 0px 10px 3px #ccc;
+  transition: var(--transition);
+  
+}
+
+.show_modal_click{
+  opacity: 1;
+}
+
+
+.container_main_form:before{
+  content: '';
+  position: absolute;
+  width: 2000px;
+  height: 2000px;
+  border-radius: 50%;
+  background: linear-gradient(-45deg, #001236, #090c11);
+  top: -10%;
+  right: 48%;
+  transform: translateY(-50%);
+  z-index: 6;
+  transition: 1.8s ease-in-out;
+}
+
+.forms-container{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.signin-signup{
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50% , -50%);
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr;
+  z-index: 5;
+  transition: 1s 0.7s ease-in-out;
+}
+
+form{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 5rem;
+  overflow: hidden;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  transition: 0.2s 0.7s ease-in-out;
+}
+
+form.sign-in-form{
+  z-index: 2;
+}
+
+form.sign-up-form{
+  z-index: 1;
+  opacity: 0;
+}
+
+.title{
+  font-size: 2.2rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.input-field{
+  max-width: 380px;
+  width: 100%;
+  height: 55px;
+  background-color: #cac9c9;
+  margin: 10px 0;
+  border-radius: 55px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding: 0 0.4rem;
+}
+
+.input-field i{
+  text-align: center;
+  line-height: 55px;
+  color: #181717;
+  font-size: 1.1rem;
+}
+
+.input-field input{
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.input-field input::placeholder{
+  color: #495c81;
+  font-weight: 500;
+}
+
+.btn_modal{
+  width: 150px;
+  height: 49px;
+  outline: none;
+  border: none;
+  border-radius: 49px;
+  background-color: #090c11;
+  color: #fff;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn_modal:hover{
+  background-color: #001236;
+}
+
+.social-text{
+  padding: 0.7rem 0;
+  font-size: 1rem;
+}
+
+.social-media{
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon{
+  height: 46px;
+  width: 46px;
+  border: 1px solid #333;
+  margin: 0 0.45rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1rem;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.social-icon:hover{
+  color: #011f5a;
+  border-color: #011f5a;
+}
+
+
+.panels-container{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.panel{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  text-align: center;
+  z-index: 7;
+}
+
+.left-panel{
+  pointer-events: all;
+  padding: 3rem 17% 2rem 12%;
+}
+.right-panel{
+  pointer-events: none;
+  padding: 3rem 12% 2rem 17%;
+}
+
+.panel .content{
+  color: #fff;
+  transition: 0.9s 0.6s ease-in-out;
+}
+
+.panel h3{
+  font-weight: 600;
+  line-height: 1;
+  font-size: 1.5rem;
+}
+
+.panel p{
+  font-size: 0.95rem;
+  padding: 0.7rem 0;
+}
+
+.btn_modal.transparent{
+  margin: 0;
+  background: none;
+  border: 2px solid #fff;
+  width: 130px;
+  height: 41px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.image{
+  width: 100%;
+  transition: 1.1s 0.4s ease-in-out;
+}
+
+.right-panel .content, .right-panel .image{
+  transform: translateX(800px);
+}
+
+/* ANIMATION sTYLING */
+/* 
+.container_main_form.sign-up-mode:before{
+  transform: translate(100%, -50%);
+  right: 52%;
+}
+
+.container_main_form.sign-up-mode .left-panel .image,
+.container_main_form.sign-up-mode .left-panel .content{
+  transform: translateX(-800px);
+}
+
+.container_main_form.sign-up-mode .right-panel .image,
+.container_main_form.sign-up-mode .right-panel .content{
+  transform: translateX(0px);
+
+}
+
+.container_main_form.sign-up-mode .left-panel{
+  pointer-events: none;
+}
+
+.container_main_form.sign-up-mode .right-panel{
+  pointer-events: all;
+}
+
+.container_main_form.sign-up-mode .signin-signup{
+  left: 25%;
+}
+
+.container_main_form.sign-up-mode form.sign-in-form{
+  z-index: 1;
+  opacity: 0;
+}
+
+.container_main_form.sign-up-mode form.sign-up-form{
+  z-index: 2;
+  opacity: 1;
+}
+
+
+/* Responsiveness */
+/* 
+@media (max-width: 768px){
+  .container_main_form{
+    width: 30rem;
+    height: 40rem;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+  }
+   
+  .container_main_form:before{
+      width: 1500px;
+      height: 1500px;
+      left: 30%;
+      bottom: 68%;
+      transform: translateX(-50%);
+      right: initial;
+      top: initial;
+      transition: 2s ease-in-out;
+  }
+  .signin-signup{
+      width: 100%;
+      left: 50%;
+      top: 95%;
+      transform: translate(-50%, -100%);
+      transition: 1s 0.8s ease-in-out;
+  }
+  .panels-container{
+      z-index: 10;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 2fr 1fr ;
+  }
+  .panel{
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      padding: 2.5rem 8%;
+  }
+
+  .panel .content{
+      padding-right: 15%;
+      transition: 0.9s 0.8s ease-in-out;
+  }
+  .panel h3{
+      font-size: 1.2rem;
+  }
+  .panel p{
+      font-size: 0.7rem;
+      padding: 0.5rem 0;
+  }
+  .btn_modal.transparent{
+      width: 110px;
+      height: 35px;
+      font-size: 0.7rem;
+  }
+  .image{
+      width: 200px;
+      transition: 0.9s 0.6s ease-in-out;
+  }
+  .left-panel{
+      grid-row: 1/2;
+  }
+  .right-panel{
+      grid-row: 3/4;
+  }
+  .right-panel .content, .right-panel .image{
+      transform: translateY(300px);
+  }
+  .container_main_form.sign-up-mode:before{
+      transform: translate(-50%, 100%);
+      bottom: 32%;
+      right: initial;
+  }
+  .container_main_form.sign-up-mode .left-panel .image,
+  .container_main_form.sign-up-mode .left-panel .content{
+      transform: translateY(-300px);
+  }
+  .container_main_form.sign-up-mode .signin-signup{
+      top: 5%;
+      transform: translate(-50%, 0);
+      left: 50%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  
+  form {
+    padding: 0 1.5rem;
+  }
+.container_main_form{
+  width: 20rem;
+  height: 10rem;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+}
+  .image {
+    display: none;
+  }
+  .panel .content {
+    padding: 0.5rem 1rem;
+  }
+  .container_main_form {
+    padding: 1.5rem;
+  }
+
+  .container_main_form:before {
+    bottom: 72%;
+    left: 50%;
+  }
+
+  .container_main_form.sign-up-mode:before {
+    bottom: 28%;
+    left: 50%;
+  }
+}
+ */
+
+
+
+
+
